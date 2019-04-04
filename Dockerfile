@@ -9,7 +9,5 @@ RUN chmod +x /init.sh
 
 EXPOSE 5672 15672
 
-#RUN ./init.sh
-CMD ["/init.sh"]
-#ENTRYPOINT ["rabbitmq-server"]
+ENTRYPOINT ["rabbitmq-server"]
 
